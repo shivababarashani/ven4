@@ -1,0 +1,103 @@
+﻿@model Vendor.Domain.Entites.Branch.BranchAddress
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>BranchAddress</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="PostalCode" class="control-label"></label>
+                    <input asp-for="PostalCode" class="form-control" />
+                    <span asp-validation-for="PostalCode" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="Tel" class="control-label"></label>
+                    <input asp-for="Tel" class="form-control" />
+                    <span asp-validation-for="Tel" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="Fax" class="control-label"></label>
+                    <input asp-for="Fax" class="form-control" />
+                    <span asp-validation-for="Fax" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="Website" class="control-label"></label>
+                    <input asp-for="Website" class="form-control" />
+                    <span asp-validation-for="Website" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="BranchTypeId" class="control-label"></label>
+                    <select asp-for="BranchTypeId" class="form-control" asp-items="ViewBag.BranchTypeId"></select>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="BranchStaffId" class="control-label"></label>
+                    <select asp-for="BranchStaffId" class="form-control" asp-items="ViewBag.BranchStaffId"></select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="BranchInfrastructureId" class="control-label"></label>
+                    <select asp-for="BranchInfrastructureId" class="form-control" asp-items="ViewBag.BranchInfrastructureId"></select>
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="form-group">
+                    <label asp-for="UserId" class="control-label"></label>
+                    <input asp-for="UserId" class="form-control" />
+                    <span asp-validation-for="UserId" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+
+    </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
